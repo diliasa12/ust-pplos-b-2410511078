@@ -2,20 +2,16 @@ import pool from "./db.js";
 import mysql from "mysql2/promise";
 import "dotenv/config";
 async function migrate() {
-  console.log(process.env.DB_HOST);
   const tempConnection = await mysql.createConnection({
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
     user: process.env.DB_USERNAME,
-    database: process.env.DB_DATABASE,
     password: process.env.DB_PASSWORD,
   });
   await tempConnection.query(`
   CREATE DATABASE IF NOT EXISTS \`${process.env.DB_DATABASE}\``);
   await tempConnection.end();
-
   const conn = await pool.getConnection();
-
   try {
     await conn.query(`
       CREATE TABLE IF NOT EXISTS users(
