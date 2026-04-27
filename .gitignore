@@ -1,0 +1,11 @@
+.env
+node_modules/
+/services/fieldService/vendor
+/services/fieldService/.env
+/services/fieldService/storage/logs/*.log
+/services/fieldService/storage/framework/cache/
+/services/fieldService/storage/framework/sessions/
+/services/fieldService/storage/framework/views/
+/services/fieldService/bootstrap/cache/*.php
+
+
