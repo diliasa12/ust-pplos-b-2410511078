@@ -8,15 +8,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/health", (req, res) => {
-  res.status(200).json({
-    success: true,
-    service: "booking-service",
-    status: "running",
-    port: process.env.PORT,
-  });
-});
-
 app.use("/bookings", bookingRoutes);
 
 app.use((req, res) => {

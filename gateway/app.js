@@ -18,7 +18,7 @@ app.use(
 app.use(
   "/service2",
   createProxyMiddleware({
-    target: "http://localhost:3002",
+    target: "http://localhost:3002/api",
     changeOrigin: true,
     pathRewrite: {
       "^/service2": "",
