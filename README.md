@@ -9,7 +9,7 @@
 | **Kelas**       | B                                                |
 | **Mata Kuliah** | Pembangunan Perangkat Lunak Berorientasi Service |
 | **Dosen**       | Muhammad Panji Muslim, S.Pd., M.Kom              |
-| **Demo Video**  | [Link YouTube]                                   |
+| **Demo Video**  | [https://youtu.be/xSLS2TtadFY]                   |
 
 ---
 
